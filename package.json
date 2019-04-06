@@ -13,7 +13,8 @@
       "@babel/plugin-proposal-pipeline-operator": "^7.3.2",
       "gulp": "^4.0.0",
       "readline-sync": "^1.4.9",
-      "source-map-support": "^0.5.10"
+      "source-map-support": "^0.5.10",
+      "lodash": "*"
    },
    "devDependencies": {
       "@babel/cli": "^7.2.3",
