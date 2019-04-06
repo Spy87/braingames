@@ -19,7 +19,6 @@ const playRound = (getPuzzle, count = 0) => {
 };
 
 export const run = (description, getPuzzle) => {
-
   console.log('Welcome to the Brain Games!');
   console.log(description);
 
