@@ -5,4 +5,4 @@ start:
 calc:
 	npm run babel-node -- src/bin/brain-calc.js
 lint:
-	npm run eslint ./src/bin/*.js		
+	npm run eslint -- src		

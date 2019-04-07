@@ -1,6 +1,11 @@
 import { random } from 'lodash';
+import { run } from '../game-engine';
 
-export const getPuzzle = (minNum, maxNum) => {
+const minNum = 0;
+const maxNum = 100;
+const description = 'Answer "yes" if number even otherwise answer "no"';
+
+const getPuzzle = () => {
   const result = {};
   const num = random(minNum, maxNum);
 
@@ -14,4 +19,4 @@ export const getPuzzle = (minNum, maxNum) => {
   return result;
 };
 
-export default getPuzzle;
+export default () => run(description, getPuzzle);
