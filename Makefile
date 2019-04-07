@@ -6,5 +6,7 @@ calc:
 	npm run babel-node -- src/bin/brain-calc.js
 gsd:
 	npm run babel-node -- src/bin/brain-gsd.js
+balance:
+	npm run babel-node -- src/bin/brain-balance.js
 lint:
 	npm run eslint -- src		

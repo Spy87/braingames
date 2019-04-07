@@ -9,7 +9,7 @@
         "type": "node",
         "request": "launch",
         "name": "Launch Program",
-        "program": "${workspaceFolder}/src/bin/brain-calc.js",
+        "program": "${workspaceFolder}/src/games/balance.js",
         "outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
         "console": "integratedTerminal"
       }
