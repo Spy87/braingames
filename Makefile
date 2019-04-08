@@ -8,5 +8,10 @@ gsd:
 	npm run babel-node -- src/bin/brain-gsd.js
 balance:
 	npm run babel-node -- src/bin/brain-balance.js
+progression:
+	npm run babel-node -- src/bin/brain-progression.js		
 lint:
-	npm run eslint -- src		
+	npm run eslint -- src
+build:
+	rm -rf dist
+	npm run build
