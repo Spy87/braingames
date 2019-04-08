@@ -6,8 +6,7 @@ const misElement = '..';
 const separator = ' ';
 const description = 'What number is missing in this progression?';
 
-// eslint-disable-next-line max-len
-const getElementProgression = (num, startNum, stepProgression) => startNum + (num - 1) * stepProgression;
+const getElementProg = (num, startNum, stepProgression) => startNum + (num - 1) * stepProgression;
 
 const getProgression = (startNum, stepProgression, misNumber) => {
   let result = '';
@@ -21,7 +20,7 @@ const getProgression = (startNum, stepProgression, misNumber) => {
     if (i === misNumber) {
       result += `${misElement}${separator}`;
     } else {
-      result += `${getElementProgression(i, startNum, stepProgression)}${separator}`;
+      result += `${getElementProg(i, startNum, stepProgression)}${separator}`;
     }
 
     i += 1;
@@ -37,7 +36,7 @@ const getPuzzle = () => {
   const misNumber = random(1, lengthProgression);
 
   result.question = getProgression(startNum, stepProgression, misNumber);
-  result.solution = getElementProgression(misNumber, startNum, stepProgression).toString();
+  result.solution = getElementProg(misNumber, startNum, stepProgression).toString();
 
   return result;
 };
